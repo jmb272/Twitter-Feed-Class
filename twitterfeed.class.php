@@ -53,7 +53,7 @@ class TwitterFeed
 		
 		$file_content = serialize($this->tweets);
 		
-		$fp = fopen($this->cache_file,'w');
+		$fp = fopen($this->cache_file, 'w');
 		fputs($fp, $file_content);
 		fclose($fp);
 		
